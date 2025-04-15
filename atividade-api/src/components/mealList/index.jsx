@@ -54,7 +54,7 @@ const mealList = () => {
             </div>
             <div className={styles.content}>
               <h2 className={styles.mealTitle}>{meal.strMeal}</h2>
-          
+              <p className={styles.instructions}>How Make: {meal.strInstructions}</p>
             </div>
           </div>
         ))}

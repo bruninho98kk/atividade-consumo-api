@@ -12,6 +12,14 @@
   font-weight: bold;
 }
 
+.mealDescription {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-top: 10px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
 .culinariaGrid {
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +43,8 @@
 
 .imageContainer {
   height: 200px;
+  width: 100%;
+ 
   overflow: hidden;
   border-bottom: 2px solid #ecf0f1;
 }
