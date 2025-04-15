@@ -1,0 +1,113 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.culinariaGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.culinariaCard {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.culinariaCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.imageContainer {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.culinariaCard:hover .image {
+  transform: scale(1.1);
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.culinariaTitle {
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #34495e;
+}
+
+.director,
+.year {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin: 5px 0;
+}
+
+.rating {
+  margin-top: 10px;
+}
+
+.score {
+  display: inline-block;
+  background-color: #27ae60;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+.error {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #e74c3c;
+  background-color: #fde8e7;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .culinariaGrid {
+    justify-content: center;
+  }
+
+  .culinariaCard {
+    width: 280px;
+  }
+}
